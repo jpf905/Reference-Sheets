@@ -18,6 +18,11 @@ NOTE:
 The only thing we can say is the changes move together.
 2. Correlations should be subject to testing to determin whether they're statistically significant.
 
+### Predicting Values with Regression Analysis
+ Y: the predicted value; the dependent variable.
+ X: the independent variable.
+ b: the slope. Measures how many units the y-axis value will increas or decrease for each unit of the x-axis value.
+ 
 ```SQL
 - Finding slope and Y-intercept
 SELECT
@@ -31,4 +36,23 @@ FROM table-name;
 -- Results should be slope = 1016.55 and Y-int = 29651.42
 -- Then you can find Y= 106.55(% found in problem) = 29651.42
 ```
+### Finding the Effect of an Independent Variable with *r-Squared*
+* We can measure the extent that the variation in the x variable explains the variation in the y variable.
+* To do this we square the **coefficient of determination**, known as **r-squared**.
+* R-squared indicates the percentage of the variation that is explained by the independent variable. It is a value between zero and one.
+
+```SQL
+-- Using
+```
+
+### Finding Variance and Standard Deviation
+**var_pop(numeric)**
+**var_samp(numeric)**
+**stddev_pop(numeric)**
+**stddev_samp(numeric)**
+
+## Creating Rankings with SQL
+
+### Rank with  *rank()* and *dense_rank()*
+d
 
