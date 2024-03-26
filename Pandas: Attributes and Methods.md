@@ -51,7 +51,7 @@ Enables aggregations on the groups
 Selects a specific group.
 
 **.loc()** and **.iloc()**\
-Used in slicing data from the dataframe.\
+Used in slicing data from the dataframe. Useful when you need to examine results not at the very beginning or ending of the dataframe.
 **loc** - select by labels\
 **iloc** - select by positions
 
