@@ -1,17 +1,62 @@
 ## Pandas: Attributes and Methods for Data Analysis
+NOTE: Maybe in future categorize these under specific headings.
+
+### <ins>**Adding, Modifying Data, and Mapping**</ins>
+**.fillna()**\
+Fills in null values with specified value.
+
+**.apply()**\
+Allows the users to pass a function and apply it on every single value of the Pandas series.
+
+**.map()**\
+Modifies every individual cell in a series or column.It is used to map values from two series having one similar column. For mapping two series, the last column of the first should be the same as the index column of the second series, also the values should be unique.
+
+**.applymap()**\
+Updates every cell in the entire dataframe.  A method that applies a function that accepts and returns a scalar to every element of a DataFrame.
+
+**.iterrows()**\
+Iterates through each row and typicaly used in a for-loop.  It iterates over a Pandas DataFrame rows in the form of (index, series) pair. This function iterates over the data frame column, it will return a tuple with the column name and content in the form of a series.
+
+**.dtypes**\
+Gives the data types of the selected column.
+
+**.info()**\
+Displays various info about the dataset.
+
+**.to_datetime()**\
+
+**.describe()**\
+Gives various statistical information about the numerical columns.
+
+**.astype()**\
+Used to change the data type of a series
+
+### <ins>**Conditionals in Dataframes and Seris**</ins>
+
+### <ins>**Binning**</ins>
+**.contains()**\
+
+**.qcut()**\
+Bins all data into quartiles.  It divides the data so that each bin contains roughly equal data counts.
+
+**.cut()**\
+Bins all data based on equal intervals.  It divides the range so that each bin covers an equal interval.
+
+### <ins>**Reshaping Data**</ins>
+
+
+
 
 **pd.read_csv(file)**
-
 **.head()**\
 Displays top 5 rows
 
 **.shape**\
 Gives the dimensions of the dataset
 
-**.info()**\
-Displays various info about the dataset.
 
-**.to_datetime()**\
+
+
 
 
 **.isnull()**\
@@ -26,8 +71,6 @@ Gives various statistical information about the numerical columns.
 **.value_counts()**\
 Identifies the different categories in a feature as well as the count of values per category.
 
-**.fillna()**\
-Fills in null values with specified value.
 
 **.sample()**\
 Chooses random values from the data frame.
@@ -61,11 +104,17 @@ Sorts dataframe by indices or values.
 **.query()**\
 Used to filter out dataframe per our conditions or requirements.
 
+**.index()**\
+Locates a row at the index position.
+
 **.set_index()**\
 Sets any column as the index of the dataframe
 
 **.duplicated()**\
 Finds all the duplicated rows in the dataset.
+
+**.dropna()**\
+Drops every row that includes at least one NA entry.  Be careful with this function because if there is any missing information in any of the columns for a given row, the entire row will be dropped.
 
 **.drop_duplicates()**\
 Drops the duplicate values in the dataset.
